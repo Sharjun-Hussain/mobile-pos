@@ -262,7 +262,7 @@ export default function PosScreen() {
       {/* === DRAWER === */}
       <div
         ref={drawerRef}
-        className="absolute inset-x-0 bottom-0 h-[90vh] bg-white z-40 flex flex-col translate-y-full rounded-t-[2rem] shadow-[0_-20px_60px_rgba(0,0,0,0.3)] overflow-hidden"
+        className="absolute inset-x-0 bottom-0 h-[90vh] bg-white z-40 flex flex-col translate-y-full rounded-t-4xl shadow-[0_-20px_60px_rgba(0,0,0,0.3)] overflow-hidden"
       >
         {/* HEADER */}
         <div className="relative bg-white border-b px-6 py-5 flex items-center justify-between shrink-0 z-50">

@@ -506,13 +506,13 @@ export default function ProductManager() {
         <div
           ref={view === "DETAIL" ? detailRef : createRef}
           className={`absolute inset-0 z-30 flex flex-col bg-gray-50 shadow-2xl overflow-hidden
-            ${view === "CREATE" ? "top-4 rounded-t-[32px]" : "h-full w-full"}
+            ${view === "CREATE" ? "top-4 rounded-t-4xl" : "h-full w-full"}
           `}
         >
           {/* Header */}
           <div
             className={`px-6 py-4 border-b bg-white flex items-center justify-between shrink-0 ${
-              view === "CREATE" ? "rounded-t-[32px]" : ""
+              view === "CREATE" ? "rounded-t-4xl" : ""
             }`}
           >
             <div className="flex items-center gap-3">

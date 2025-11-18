@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LenisWrapper from "./Components/LenisWrapper";
+import AppLayout from "./layouts/AppLayout";
+
+// Import the new application wrapper
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +27,17 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <LenisWrapper>
+          {/* Wrap the children (your entire app content) 
+            with AppLayout, which handles the navigation state 
+          */}
+          <AppLayout>
+            {/* Note: Since AppLayout is now managing the views (POS, Inventory), 
+              the 'children' prop from Next.js might not be used directly here. 
+              Instead, AppLayout will render the active screen (e.g., ProductManager).
+            */}
+            {children}
+          </AppLayout>
 
-        {children}
         </LenisWrapper>
       </body>
     </html>

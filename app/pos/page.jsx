@@ -153,7 +153,7 @@ export default function PosScreen() {
   const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
 
   return (
-    <div className="bg-black h-dvh w-screen overflow-hidden relative">
+    <div className="bg-black h-[calc(100dvh-60px)] w-screen overflow-hidden relative">
       {/* === MAIN SCREEN === */}
       <div
         ref={mainContainerRef}

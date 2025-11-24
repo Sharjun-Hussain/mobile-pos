@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation"; // Use 'next/navigation' for App Ro
 
 const navItems = [
   { id: "POS", label: "POS", icon: ShoppingBag, path: "/pos" },
-  { id: "INVENTORY", label: "Inventory", icon: Package, path: "/inventory" },
+  { id: "INVENTORY", label: "Inventory", icon: Package, path: "/products" },
   { id: "SETTINGS", label: "Settings", icon: Settings, path: "/settings" },
 ];
 

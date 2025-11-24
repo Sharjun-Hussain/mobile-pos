@@ -1,4 +1,6 @@
+"use client";
 // BottomNav.jsx (Internal component, remains largely the same but relies on router)
+
 import { ShoppingBag, Package, Settings } from "lucide-react";
 import { useRouter } from "next/navigation"; // Use 'next/navigation' for App Router
 
